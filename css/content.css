@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+:root {
+    --main-color: #007bff;
+    --secondary-color: lightgray;
+    --third-color: white;
+}
+
+.paragraph {
+    margin-left: 7%;
+    margin-right: 15%;
+    text-align: justify;
+}
+
+.paragraph p {
+    font-weight: 300;
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 17pt;
+}
+
+.paragraph h1 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 27pt;
+}
+
+.paragraph h2 {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.paragraph h3 {
+    font-weight: bold;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+@keyframes hr_animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 35%;
+    }
+}
+
+.paragraph hr {
+    width: 35%;
+    margin-left: 0;
+    height: 1px;
+    background-color: var(--main-color);
+    animation: hr_animation;
+    animation-duration: 1s;
+}
+
+.paragraph li {
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 17pt;
+    font-weight: 300;
+}
+
+.paragraph li a {
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 17pt;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.paragraph li a:hover {
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 25pt;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.paragraph li a:visited {
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 17pt;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.paragraph li a:visited:hover {
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 25pt;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.paragraph b {
+    font-size: 'Roboto', 'sans-serif';
+    font-size: 17pt;
+    font-weight: 600;
+}
+
+.img-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-text img {
+    margin-left: 5%;
+}

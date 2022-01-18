@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="./css/content.css" rel="stylesheet" type="text/css">
+    <link href="./css/graph.css" rel="stylesheet" type="text/css">
+    <title>Covid 19</title>
+</head>
+
+<body>
+    <div class="page">
+        <nav class="nav1">
+            <div class="inner-nav">
+                <img src="./assets/logo.png">
+                <h1>Covid 19</h1>
+                <div class="contagi">
+                    <div class="dati-contagi">
+                        <div class="inner-contagi">
+                            <h3 class="symbol">Contagi Mondo</h3>
+                            <h3 class="value">-</h3>
+                        </div>
+                    </div>
+                    <div class="dati-contagi">
+                        <div class="inner-contagi">
+                            <h3 class="symbol">Contagi Italia</h3>
+                            <h3 class="value">-</h3>
+                        </div>
+                    </div>
+                    <div class="dati-contagi">
+                        <div class="inner-contagi">
+                            <h3 class="symbol">Contagi Sicilia</h3>
+                            <h3 class="value">-</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="inner-nav2">
+                <div class="dropdown">
+                    <button class="drop-btn" id="btn1">
+                        info
+                    </button>
+                    <div class="dropdown-content" id="content1">
+                        <a href="./index.html#Origini">Origini </a>
+                        <a href="./index.html#Sintomi">Sintomi</a>
+                        <a href="./index.html#Trasmissione">Trasmissione</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="drop-btn" id="btn2">
+                        varianti
+                    </button>
+                    <div class="dropdown-content" id="content2">
+                        <a href="./varianti.html#Delta">Delta </a>
+                        <a href="./varianti.html#Omicron">Omicron</a>
+                        <a href="./varianti.html#Cannicavaddu">Cannicavaddu</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="drop-btn" id="btn3">
+                        campagna&nbsp;vaccinale
+                    </button>
+                    <div class="dropdown-content" id="content3">
+                        <a href="./vaccini.html#Tipologie">Tipologie Vaccino </a>
+                        <a href="./vaccini.html#Green">Green Pass</a>
+                        <a href="./vaccini.html#Super">Super Green Pass</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="drop-btn" id="btn4">
+                        dati
+                    </button>
+                    <div class="dropdown-content" id="content4">
+                        <a href="./italia.html">Italia </a>
+                        <a href="./europa.html">Europa</a>
+                        <a href="./mondo.html">Mondo</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="drop-btn" id="btn5">
+                        fonti
+                    </button>
+                    <div class="dropdown-content" id="content5">
+                        <a href="./fonti.html">Bibliografia </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="paragraph">
+                <h1 id="pippo">Casi in Italia</h1>
+                <div class="graph-wrapper">
+                    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=false&time=2020-03-01..latest&facet=none&pickerSort=desc&pickerMetric=total_cases&hideControls=true&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=false&country=~ITA"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="paragraph">
+                <h1>Dati statistici in italia</h1>
+                <hr>
+                <table id="covid-table-ita"></table>
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="./javascript/covid.js"></script>
+    <script src="./javascript/navbar.js"></script>
+    <script src="./javascript/graphdata.js"></script>
+</body>
+
+
+</html>

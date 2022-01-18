@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+:root {
+    --main-color: #007bff;
+    --secondary-color: lightgray;
+    --third-color: white;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    background-color: lightgrey;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav1 {
+    flex: 0.12;
+    height: 12%;
+    background-color: var(--main-color);
+}
+
+.inner-nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    margin-left: 42.04vh;
+}
+
+.inner-nav img {
+    width: 7vh;
+    height: 7vh;
+    margin-right: 2.95vh;
+}
+
+.inner-nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 208%;
+    color: var(--third-color);
+    margin-right: 30.058vh;
+}
+
+.nav2 {
+    margin-top: 0;
+    flex: 0.06;
+    height: 6%;
+    background-color: var(--secondary-color);
+}
+
+.inner-nav2 {
+    margin: 0;
+    margin-left: 42.04vh;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contagi {
+    flex: 0.7;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-contagi {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.94vh;
+}
+
+.dati-contagi {
+    border-right: 1px solid var(--third-color);
+    margin-right: 2.63vh;
+}
+
+.symbol {
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+.value {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: 300;
+}
+
+.drop-btn {
+    font-size: 130%;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+    color: var(--third-color);
+    padding-right: 55.98%;
+    height: 100%;
+    width: 160%;
+    color: var(--main-color);
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown {
+    height: 100%;
+    margin-right: 2.45vh;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.26s ease;
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content.expand {
+    transform: scaleY(1);
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--main-color);
+    padding: 1vh 1vw;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .fiat-dropbtn {
+    background-color: white
+}
+
+.content {
+    margin-top: 2%;
+    height: 72%;
+    flex: 0.72;
+}
